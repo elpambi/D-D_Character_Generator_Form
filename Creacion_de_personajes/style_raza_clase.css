@@ -1,0 +1,112 @@
+main {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+.titulo {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-family: "Texto Luxary", sans-serif;
+    font-weight: 100;
+    letter-spacing: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: 900px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+fieldset {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: row; /* Imagen y contenido en fila por defecto */
+    align-items: flex-start;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en pantallas pequeñas */
+}
+
+legend {
+    font-weight: bold;
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 0.1rem;
+}
+
+fieldset img {
+    max-width: 30%; /* La imagen se ajusta al ancho del contenedor */
+    height: auto;
+    margin-right: 1rem; /* Espacio entre imagen y texto */
+    border-radius: 8px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1; /* Hace que el contenido ocupe el espacio restante */
+}
+
+.content h3 {
+    margin: 0.5rem 0;
+}
+
+.content p {
+    margin: 0.5rem 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    fieldset {
+        flex-direction: column; /* Cambia la dirección de los elementos a columna en pantallas más pequeñas */
+        align-items: center; /* Centra el contenido horizontalmente */
+    }
+
+    img {
+        margin-right: 0; /* Elimina el margen derecho en pantallas pequeñas */
+        margin-bottom: 1rem; /* Añade margen inferior para separar la imagen del contenido */
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        width: 100%;
+        margin: 1rem auto;
+    }
+
+    fieldset {
+        padding: 0.5rem;
+    }
+
+    img {
+        width: 100%; /* Hace que las imágenes se ajusten al ancho del contenedor en pantallas muy pequeñas */
+        margin-bottom: 1rem;
+    }
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    padding: 10px 0;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+

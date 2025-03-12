@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DnD Interactivo</title>
+    <link rel="stylesheet" href="../fonts.css">
+    <link rel="stylesheet" href="style_creacion_de_personaje.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="Atributos.js"></script>
+</head>
+
+<body>
+    <form id="character-form">
+        <main class="hoja-personaje">
+            <fieldset class="informacion-general">
+                <legend>Información del Personaje</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre">
+                <label for="clase">Clase:</label>
+                <select id="clase" name="clase">
+                    <option value="">Selecciona una clase</option>
+                    <option value="barbaro">Barbaro</option>
+                    <option value="mago">Mago</option>
+                    <option value="bardo">Bardo</option>
+                    <option value="clerigo">Clerigo</option>
+                    <option value="druida">Druida</option>
+                    <option value="explorador">Explorador</option>
+                    <option value="paladin">Paladin</option>
+                    <option value="picaro">Picaro</option>
+                    <option value="vagabundo">Vagabundo</option>
+                </select>
+                <a href="clases.html" class="info-btn">Mas Información</a>
+
+                <label for="trasfondo">Trasfondo:</label>
+                <input type="text" id="trasfondo" name="trasfondo">
+                <a class="info-btn" href="transfondo.html">Mas Información</a>
+
+                <label for="jugador">Jugador:</label>
+                <input type="text" id="jugador" name="jugador">
+
+                <label for="raza">Raza:</label>
+                <select id="raza" name="raza">
+                    <option value="">Selecciona una raza</option>
+                    <option value="elfo">Elfo</option>
+                    <option value="enano">Enano</option>
+                    <option value="nomada_desierto">Nomada del desierto</option>
+                    <option value="aetherio">Aetherio</option>
+                    <option value="humano">Humano</option>
+                    <option value="jagger">Jagger</option>
+                    <option value="keres">Keres</option>
+                </select>
+                <a class="info-btn" href="razas.html">Mas Información</a>
+
+                <label for="alineamiento">Alineamiento:</label>
+                <input type="text" id="alineamiento" name="alineamiento">
+                <a class="info-btn" href="alineaminto.html">Mas Información</a>
+
+            </fieldset>
+
+            <fieldset class="atributos">
+                <legend>Atributos</legend>
+                <div class="atributo">
+                    <label for="fuerza">Fuerza:</label>
+                    <input readonly type="number" id="fuerza" name="fuerza" min="1" max="20">
+                </div>
+                <div class="atributo">
+                    <label for="destreza">Destreza:</label>
+                    <input readonly type="number" id="destreza" name="destreza" min="1" max="20">
+                </div>
+                <div class="atributo">
+                    <label for="constitucion">Constitución:</label>
+                    <input readonly type="number" id="constitucion" name="constitucion" min="1" max="20">
+                </div>
+                <div class="atributo">
+                    <label for="inteligencia">Inteligencia:</label>
+                    <input readonly type="number" id="inteligencia" name="inteligencia" min="1" max="20">
+                </div>
+                <div class="atributo">
+                    <label for="sabiduria">Sabiduría:</label>
+                    <input readonly type="number" id="sabiduria" name="sabiduria" min="1" max="20">
+                </div>
+                <div class="atributo">
+                    <label for="carisma">Carisma:</label>
+                    <input readonly type="number" id="carisma" name="carisma" min="1" max="20">
+                </div>
+            </fieldset>
+
+            <fieldset class="habilidades">
+                <legend>Habilidades</legend>
+                <p class="e_lim">Solo podras marcar 1 habilidad extra a eleccion por cada personaje(4 en total)</p>
+                <div class="habilidad">
+                    <label for="acrobatics">Acrobacias:</label>
+                    <input type="checkbox" id="acrobatics" name="acrobatics">
+                </div>
+                <div class="habilidad">
+                    <label for="animal_handling">Manejo de Animales:</label>
+                    <input type="checkbox" id="animal_handling" name="animal_handling">
+                </div>
+                <div class="habilidad">
+                    <label for="arcana">Arcanos:</label>
+                    <input type="checkbox" id="arcana" name="arcana">
+                </div>
+                <div class="habilidad">
+                    <label for="athletics">Atletismo:</label>
+                    <input type="checkbox" id="athletics" name="athletics">
+                </div>
+                <div class="habilidad">
+                    <label for="deception">Engaño:</label>
+                    <input type="checkbox" id="deception" name="deception">
+                </div>
+                <div class="habilidad">
+                    <label for="history">Historia:</label>
+                    <input type="checkbox" id="history" name="history">
+                </div>
+                <div class="habilidad">
+                    <label for="insight">Perspicacia:</label>
+                    <input type="checkbox" id="insight" name="insight">
+                </div>
+                <div class="habilidad">
+                    <label for="intimidation">Intimidación:</label>
+                    <input type="checkbox" id="intimidation" name="intimidation">
+                </div>
+                <div class="habilidad">
+                    <label for="investigation">Investigación:</label>
+                    <input type="checkbox" id="investigation" name="investigation">
+                </div>
+                <div class="habilidad">
+                    <label for="medicine">Medicina:</label>
+                    <input type="checkbox" id="medicine" name="medicine">
+                </div>
+                <div class="habilidad">
+                    <label for="nature">Naturaleza:</label>
+                    <input type="checkbox" id="nature" name="nature">
+                </div>
+                <div class="habilidad">
+                    <label for="perception">Percepción:</label>
+                    <input type="checkbox" id="perception" name="perception">
+                </div>
+                <div class="habilidad">
+                    <label for="performance">Interpretación:</label>
+                    <input type="checkbox" id="performance" name="performance">
+                </div>
+                <div class="habilidad">
+                    <label for="persuasion">Persuasión:</label>
+                    <input type="checkbox" id="persuasion" name="persuasion">
+                </div>
+                <div class="habilidad">
+                    <label for="religion">Religión:</label>
+                    <input type="checkbox" id="religion" name="religion">
+                </div>
+                <div class="habilidad">
+                    <label for="sleight_of_hand">Juego de Manos:</label>
+                    <input type="checkbox" id="sleight_of_hand" name="sleight_of_hand">
+                </div>
+                <div class="habilidad">
+                    <label for="stealth">Sigilo:</label>
+                    <input type="checkbox" id="stealth" name="stealth">
+                </div>
+                <div class="habilidad">
+                    <label for="survival">Supervivencia:</label>
+                    <input type="checkbox" id="survival" name="survival">
+                </div>
+                <p class="e_lim">Todas las habilidades funcionan como +2 en pruebas relacionadas</p>
+                <p class="e_lim">(Estas leyendo un libro antiguo y tienes la habilidad "Interpretación" pues sumara +2 a
+                    la prueba)</p>
+            </fieldset>
+
+
+            <fieldset class="caracteristicas">
+                <legend>Características y Rasgos</legend>
+                <textarea id="caracteristicas" name="caracteristicas" rows="5" cols="50"></textarea>
+            </fieldset>
+    </form>
+    <button onclick="downloadTextFile()" class="info-btn">Descargar Datos</button>
+    <h3 class="tit_final">GRACIAS POR PARTICIPAR</h3>
+    <p>Sigue estos pasos:</p>
+    <ol>
+        <li>Comprueba que el documento se ha instalado con los datos correctos</li>
+        <li>Manda el docuemnto por Discord o Gmail(pabloruizcar@gmail.com)</li>
+    </ol>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://github.com/elpambi" target="_blank">
+                <img src="../assets/img/github.png" alt="Github_logo">
+            </a>
+            <a href="https://www.linkedin.com/in/pablo-ruiz-carbonero-6770012ab/" target="_blank">
+                <img src="../assets/img/linkedin.png" alt="Linkedin_logo">
+
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
